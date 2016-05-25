@@ -1,0 +1,14 @@
+Reflections
+
+1. I estimate that I spent about 7 hours working on this project.
+
+2. The most rewarding challenge was figuring out how to use one class inside another class, although this project was
+  full of challenges that have enabled me to achieve a greater understanding of how to program using Ruby.
+
+3. The first additional feature that I built was a method to notify the user regarding low stock (< 2) remaining.  This
+   allows the user to easily look up what products need to be reordered.  The second additional feature that I built was
+   a method to calculate the value of the products left in stock.  This feature is something that I would like to have
+   in an inventory tracking application.  It is helpful for a business owner to easily know the value of all products
+   remaining in storage.
+
+4. I have a lot of work to do regarding memorizing Ruby syntax and functionality.  My goal is a fluency in Ruby.
