@@ -75,4 +75,13 @@ require_relative "lib/transaction"
 #  Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.  # this occurs when line #74 is uncommented
 
 
+# New Functionality
 
+# 1. Product Stock Evaluator
+puts ' '
+Product.low_stock
+
+
+# 2. Remaining Value Left in inventory for each product
+puts ' '
+Product.remaining_value

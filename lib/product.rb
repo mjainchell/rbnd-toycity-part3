@@ -25,6 +25,8 @@ class Product
     @stock -= 1
   end
 
+
+
   private
 
   def add_to_products
@@ -51,6 +53,40 @@ class Product
 
     return in_stock
 
+  end
+
+  # New Functionality
+
+  # 1. Low Stock Evaluation
+
+  def self.low_stock
+
+    puts 'Low Stock Notification:'
+    puts '***********************'
+
+    @@products.each do |product|
+      if product.stock <= 2
+        puts "Reorder: #{product.title}, there are #{product.stock} left in inventory."
+      else
+        puts "Enough Stock: #{product.title}, there are #{product.stock} left in inventory."
+      end
+
+    end
+
+  end
+
+
+  # 2. Remaining Value of Inventory
+
+  def self.remaining_value
+
+    puts 'Remaining Value Left In Inventory:'
+    puts '**********************************'
+
+    @@products.each do |product|
+      value_remaining = product.stock * product.price
+      puts "#{product.title}: " + '$' + value_remaining.round(2).to_s
+    end
   end
 
 end
