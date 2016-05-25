@@ -21,6 +21,10 @@ class Product
     stock > 0
   end
 
+  def amend_stock
+    @stock -= 1
+  end
+
   private
 
   def add_to_products
@@ -48,6 +52,7 @@ class Product
     return in_stock
 
   end
+
 end
 
 
