@@ -24,9 +24,12 @@ class Transaction
   end
 
   def add_to_transactions
-    @@transactions << self
+    if product.in_stock?
+      @@transactions << self
+    else
+      raise OutOfStockError, "Out Of Stock Error: #{product.title} is out of stock."
+    end
   end
-
 
 
   def self.find(product_id)

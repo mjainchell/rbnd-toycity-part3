@@ -85,3 +85,4 @@ Product.low_stock
 # 2. Remaining Value Left in inventory for each product
 puts ' '
 Product.remaining_value
+

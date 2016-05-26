@@ -16,11 +16,7 @@ class Customer
   end
 
   def purchase(product)
-   if product.in_stock?
     Transaction.new(self, product)
-   else
-     raise OutOfStockError, "Out Of Stock Error: #{product.title} is out of stock."
-   end
   end
 
   private
